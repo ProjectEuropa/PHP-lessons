@@ -57,8 +57,8 @@ PHPでは$名前の形式である必要があります。
 下記のコードは上記のブラウザと同じ結果になります。
 ```php
 <?php
-    $msg = 'Hello';
-    echo $msg;
+    $msg = 'Hello'; // 「=」は代入の意味
+    echo $msg;
 ?>
 ```
 
@@ -84,8 +84,8 @@ if文を使用することで、「Aの場合はaを実行する。Bの場合は
 <?php
     $msg = 'Hello';
 
-    if ($msg === 'Hello') {
-        echo 'World';
+    if ($msg === 'Hello') { // 「===」は比較の意味。「==」での比較もできますが、「===」は型まで比較します。
+        echo 'World';
     } else if ($msg === 'World') {
         echo 'Hello';
     } else {
